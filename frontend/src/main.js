@@ -1,5 +1,5 @@
 import './styles/indexStyles.css';
-import './scripts/mobile-nav.js';
+import { initMobileNav } from './scripts/mobile-nav.js';
 import home from './pages/home.js';
 import benefits from './pages/benefits.js';
 import services from './pages/services.js';
@@ -57,4 +57,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
   // Run benefit-card logic for the benefits section
   import('./modules/benefit-card.js');
+
+  // Initialize mobile nav after DOM is updated
+  initMobileNav();
 });

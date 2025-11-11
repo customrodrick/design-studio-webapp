@@ -1,20 +1,23 @@
 // Mobile sidebar menu and SPA navigation logic
 export function initMobileNav() {
-    const hamburger = document.getElementById('hamburger');
+    let hamburger = document.getElementById('hamburger');
     const sidebar = document.getElementById('mobile-sidebar');
     const sidebarClose = document.getElementById('sidebar-close');
     const sidebarLinks = sidebar ? sidebar.querySelectorAll('.nav-link') : [];
-    const hamburgerIcon = hamburger ? hamburger.querySelector('i') : null;
 
-    if (hamburger && sidebar && hamburgerIcon) {
+    if (hamburger && sidebar) {
         // Remove previous event listeners by cloning (prevents stacking)
         const newHamburger = hamburger.cloneNode(true);
         hamburger.parentNode.replaceChild(newHamburger, hamburger);
+        hamburger = newHamburger;
+        let hamburgerIcon = hamburger.querySelector('i');
 
-        newHamburger.addEventListener('click', () => {
+        hamburger.addEventListener('click', () => {
             sidebar.classList.add('active');
-            hamburgerIcon.classList.remove('fa-bars');
-            hamburgerIcon.classList.add('fa-times');
+            if (hamburgerIcon) {
+                hamburgerIcon.classList.remove('fa-bars');
+                hamburgerIcon.classList.add('fa-times');
+            }
             document.body.classList.add('sidebar-open');
         });
 
@@ -22,8 +25,10 @@ export function initMobileNav() {
         if (sidebarClose) {
             sidebarClose.addEventListener('click', () => {
                 sidebar.classList.remove('active');
-                hamburgerIcon.classList.add('fa-bars');
-                hamburgerIcon.classList.remove('fa-times');
+                if (hamburgerIcon) {
+                    hamburgerIcon.classList.add('fa-bars');
+                    hamburgerIcon.classList.remove('fa-times');
+                }
                 document.body.classList.remove('sidebar-open');
             });
         }
@@ -32,8 +37,10 @@ export function initMobileNav() {
         sidebarLinks.forEach(link => {
             link.addEventListener('click', () => {
                 sidebar.classList.remove('active');
-                hamburgerIcon.classList.add('fa-bars');
-                hamburgerIcon.classList.remove('fa-times');
+                if (hamburgerIcon) {
+                    hamburgerIcon.classList.add('fa-bars');
+                    hamburgerIcon.classList.remove('fa-times');
+                }
                 document.body.classList.remove('sidebar-open');
             });
         });
@@ -55,7 +62,6 @@ export function initMobileNav() {
         });
     });
 
-    // Optional: highlight active nav-link based on hash
     function highlightActiveLink() {
         const hash = window.location.hash || '#home';
         navLinks.forEach(link => {
