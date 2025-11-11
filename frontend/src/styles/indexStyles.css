@@ -413,7 +413,7 @@ body {
       rgba(31, 42, 68, 0.8), 
       rgba(45, 59, 85, 0.8)
     ),
-    url('../../Dist/images/background.jpg') center center / cover no-repeat fixed;
+    url('/src/images/background.jpg') center center / cover no-repeat fixed;
   color: var(--text-primary, #e5e7eb);
   position: relative;
   overflow: hidden;

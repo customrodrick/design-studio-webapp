@@ -17,4 +17,3 @@ benefitItem.forEach((benefitItem) => {
 })
 
 document.querySelector('.benefit-js').innerHTML = benefitHTML;
-
