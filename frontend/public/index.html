@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Design Studio | HOME</title>
+    <link rel="stylesheet" href="../../Dist/styles/indexStyles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <div class="container navbar-container">
+        <div class="navbar-left">
+          <a href="#home" class="navbar-logo-link">
+            <img
+              src="../../Dist/images/omni.png"
+              alt="mubas Logo"
+              class="navbar-logo-img"
+            />
+            <span class="navbar-title"
+              >Design<span class="highlight">Studio</span></span
+            >
+          </a>
+        </div>
+
+        <div class="nav-links">
+          <a href="#benefits" class="nav-link">Benefits</a>
+          <a href="#open-account" class="nav-link">Services</a>
+          <a href="#place-order" class="nav-link">Membership</a>
+          <a href="#portfolio" class="nav-link">About</a>
+          <a href="#support" class="nav-link">Components</a>
+          <a href="#learn" class="nav-link">Team</a>
+        </div>
+
+        <div class="auth-buttons">
+          <a href="Authentication/investor/login.html" class="auth-button login"
+            >Register</a
+          >
+          <a href="intro/disclaimer.html" class="auth-button signup"
+            ><i class="fas fa-sign-in"></i
+          ></a>
+
+          <div class="hamburger" id="hamburger">
+            <i class="fa fa-bars"></i>
+          </div>
+        </div>
+
+        <div class="mobile-sidebar" id="mobile-sidebar">
+          <div class="sidebar-content">
+            <button
+              class="sidebar-close"
+              id="sidebar-close"
+              aria-label="Close navigation"
+            >
+              <i class="fas fa-times"></i>
+            </button>
+            <nav class="sidebar-nav">
+              <a href="#benefits" class="nav-link">Benefits</a>
+              <a href="#open-account" class="nav-link">Services</a>
+              <a href="#place-order" class="nav-link">Membership</a>
+              <a href="#portfolio" class="nav-link">About</a>
+              <a href="#support" class="nav-link">Components</a>
+              <a href="#learn" class="nav-link">Team</a>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section text-center">
+      <div class="container">
+        <div class="fidelity-card card hero-card">
+          <img
+            src="../../Dist/images/omni.png"
+            alt="Mubas Logo"
+            class="fidelity-card-logo hero-logo"
+          />
+          <h1 class="fidelity-card-title hero-title">
+            MUBAS <span class="highlight">Design</span> Studio
+          </h1>
+          <p class="fidelity-card-desc hero-desc">
+            <b>Your <span class="highlight">Innovative</span> Place - </b>
+            This is where imagination meets execution, ideas become impact, and collaboration fuels creation. Here, visionaries transform possibilities into groundbreaking realities. Innovate. Inspire. Ignite.
+          </p>
+          <div class="fidelity-card-actions hero-actions">
+            <a href="intro/disclaimer.html" class="cta-button">Register</a>
+            <a href="Authentication/investor/login.html" class="cta-button secondary">Log in</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="../../Dist/scripts/index.js"></script>
+  </body>
+</html>
