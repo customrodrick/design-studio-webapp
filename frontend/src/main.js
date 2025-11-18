@@ -57,7 +57,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
   // Run benefit-card logic for the benefits section
   import('./modules/benefit-card.js');
-
+  import('./modules/service-card.js')
   // Initialize mobile nav after DOM is updated
   initMobileNav();
 });
