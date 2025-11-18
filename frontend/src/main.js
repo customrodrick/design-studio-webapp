@@ -3,7 +3,14 @@ import { initMobileNav } from './scripts/mobile-nav.js';
 import home from './pages/home.js';
 import benefits from './pages/benefits.js';
 import services from './pages/services.js';
-// import other sections as needed
+import membership from './pages/membership.js';
+import portfolio from './pages/portfolio.js';
+import components from './pages/components.js';
+import support from './pages/support.js';
+import team from './pages/team.js';
+import affiliations from './pages/affiliations.js';
+import about from './pages/about.js';
+import { membershipCard } from './modules/membership-card.js';
 
 const navbar = `
   <nav class="navbar">
@@ -53,11 +60,22 @@ window.addEventListener('DOMContentLoaded', () => {
     navbar +
     home +
     benefits +
-    services;
+    services +
+    membership +
+    portfolio +
+    components +
+    support +
+    // team +
+    // affiliations +
+    about;
 
   // Run benefit-card logic for the benefits section
   import('./modules/benefit-card.js');
-  import('./modules/service-card.js')
+  import('./modules/service-card.js');
+
+  // initialise membership card function
+  membershipCard();
+
   // Initialize mobile nav after DOM is updated
   initMobileNav();
 });

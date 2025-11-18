@@ -250,8 +250,20 @@ body {
 }
 
 /* Section wrappers */
-.section-home, .section-benefits, .section-open-account, .section-place-order,
-.section-portfolio, .section-questions, .section-support, .section-learn, .section-about {
+.section-home, .section-benefits, .section-open-account, .section-place-order, .section-questions, .section-learn, .section-about, .section-affiliations {
+  padding: 4rem 0;
+  background: var(--bg-card, #2d3748);
+  color: var(--text-primary, #e5e7eb);
+}
+
+.section-portfolio {
+  background: var(--border);
+  padding: 4rem 0;
+}
+
+.section-support {
+  color: var(--text-primary, #e5e7eb);
+  background-color: var(--bg-secondary);
   padding: 4rem 0;
 }
 
@@ -278,6 +290,44 @@ body {
 .grid-services { grid-template-columns: 1fr; }
 @media (min-width: 640px) { .grid-services { grid-template-columns: repeat(2, 1fr); } }
 @media (min-width: 1024px) { .grid-services { grid-template-columns: repeat(3, 1fr); } }
+.grid-components {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 1fr;
+  margin-top: 2rem;
+}
+@media (min-width: 900px) {
+  .grid-components {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+.grid-support {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 1fr;
+  margin-bottom: 2rem;
+}
+@media (min-width: 900px) {
+  .grid-support {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.grid-team {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 1fr;
+  margin-top: 2rem;
+}
+@media (min-width: 600px) {
+  .grid-team {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 900px) {
+  .grid-team {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
 
 /* Card base */
 .card {
@@ -568,7 +618,7 @@ body {
   color: var(--text-secondary, #9ca3af);
   font-size: 1rem;
   line-height: 1.5;
-  text-align: center;
+
 }
 
 /* Services Section */
@@ -642,18 +692,21 @@ body {
 .portfolio-flex {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 4rem;
 }
-@media (min-width: 768px) {
+
+.benefit-card-desc .fa, .fa-solid {
+  color: var(--accent-green);
+  margin-right: 1.2rem;
+  margin-bottom: 1.3rem;
+}
+@media (min-width: 900px) {
   .portfolio-flex {
     flex-direction: row;
     align-items: center;
   }
 }
-.portfolio-image {
-  flex: 1;
-}
-.portfolio-content {
+.portfolio-image, .portfolio-content {
   flex: 1;
 }
 
@@ -664,13 +717,166 @@ body {
   gap: 1rem;
 }
 
-/* Card image */
+.about-card {
+  background: var(--bg-primary, #1f2a44);
+  color: var(--text-primary, #e5e7eb);
+  border-radius: 1rem;
+  box-shadow: var(--shadow-card, 0 4px 12px rgba(0,0,0,0.3));
+}
+
+/* Section wrappers (ensure all new sections use theme colors) */
+.section-questions,
+.section-learn,
+.section-about,
+.section-affiliations {
+  padding: 4rem 0;
+  background: var(--bg-card, #2d3748);
+  color: var(--text-primary, #e5e7eb);
+}
+
+/* Portfolio section image and content */
+.portfolio-image img,
 .card-img {
   border-radius: 1rem;
   box-shadow: 0 4px 24px rgba(0,0,0,0.08);
   width: 100%;
   height: auto;
 }
+
+/* Components grid */
+.grid-components {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 1fr;
+  margin-top: 2rem;
+}
+@media (min-width: 900px) {
+  .grid-components {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+.component-card {
+  background: var(--bg-primary, #1f2a44);
+  color: var(--text-primary, #e5e7eb);
+  border-radius: 1.2rem;
+  box-shadow: var(--shadow-card, 0 4px 12px rgba(0,0,0,0.3));
+  transition: transform 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+}
+
+.component-card:hover {
+  transform: translateY(-0.5rem) scale(1.03);
+  box-shadow: var(--shadow-card-hover, 0 8px 16px rgba(0,0,0,0.3));
+}
+.component-card .benefit-card-title {
+  color: var(--accent-biege, #E6D2A0);
+}
+.component-card .benefit-card-desc {
+  color: var(--text-secondary, #9ca3af);
+}
+ 
+.benefit-card-desc li {
+  list-style: none;
+}
+/* Support section */
+.grid-support {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 1fr;
+  margin-bottom: 2rem;
+}
+@media (min-width: 900px) {
+  .grid-support {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.contact-card {
+  background: var(--bg-primary, #1f2a44);
+  color: var(--text-primary, #e5e7eb);
+  border-radius: 1.2rem;
+  box-shadow: var(--shadow-card, 0 4px 12px rgba(0,0,0,0.3));
+}
+.contact-card .benefit-icon {
+  color: var(--accent-green, #2284C3);
+}
+.contact-card .benefit-card-title {
+  color: var(--accent-biege, #E6D2A0);
+}
+.contact-card .benefit-card-desc a {
+  color: var(--accent-green, #2284C3);
+  text-decoration: underline;
+}
+
+/* Team section */
+.grid-team {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 1fr;
+  margin-top: 2rem;
+}
+@media (min-width: 600px) {
+  .grid-team {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 900px) {
+  .grid-team {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.team-card {
+  background: var(--bg-primary, #1f2a44);
+  color: var(--text-primary, #e5e7eb);
+  border-radius: 1.2rem;
+  box-shadow: var(--shadow-card, 0 4px 12px rgba(0,0,0,0.3));
+  overflow: hidden;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.team-card:hover {
+  transform: translateY(-0.5rem) scale(1.03);
+  box-shadow: var(--shadow-card-hover, 0 8px 16px rgba(0,0,0,0.3));
+}
+.team-card .benefit-card-title {
+  color: var(--accent-biege, #E6D2A0);
+}
+.team-card .highlight {
+  color: var(--accent-green, #2284C3);
+}
+
+/* Affiliations section */
+.section-affiliations {
+  background: var(--bg-card, #2d3748);
+  color: var(--text-primary, #e5e7eb);
+}
+.section-affiliations img {
+  background: #fff;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+/* About section */
+.section-about {
+  background: var(--bg-card, #2d3748);
+  color: var(--text-primary, #e5e7eb);
+}
+.section-about .benefits-title .highlight {
+  color: var(--accent-green, #2284C3);
+}
+.section-about .social-icon {
+  color: var(--accent-green, #2284C3);
+  margin: 0 0.5rem;
+  font-size: 1.5rem;
+  transition: color 0.2s;
+  text-decoration: none;
+}
+.section-about .social-icon:hover {
+  color: var(--accent-biege, #E6D2A0);
+}
+
+/* ...existing code... */
+
+
 
 /* Optional: fallback for browsers without backdrop-filter */
 .hero-section::before {
@@ -757,6 +963,96 @@ body {
 }
 .cta-button:hover,
 .cta-button.secondary:hover {
+  background: var(--accent-green-hover, #339ada);
+  color: #fff;
+}
+
+/* Membership Pricing Section */
+.membership-section {
+  padding: 4rem 0;
+  background: var(--bg-card, #2d3748);
+}
+.membership-title {
+  /* already styled inline for color/size */
+}
+.membership-desc {
+  /* already styled inline for color/size */
+}
+.grid-membership {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 1fr;
+  margin-top: 2rem;
+}
+@media (min-width: 900px) {
+  .grid-membership {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.membership-card {
+  border-radius: 1.2rem;
+  box-shadow: var(--shadow-card, 0 4px 12px rgba(0,0,0,0.3));
+  background: var(--bg-primary, #1f2a44);
+  padding: 2.5rem 2rem 2rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+  border: 2px solid transparent;
+}
+.membership-card.premium {
+  border-color: var(--accent-green, #2284C3);
+}
+.membership-card.standard {
+  border-color: var(--accent-biege, #E6D2A0);
+}
+.membership-card.basic {
+  border-color: var(--text-secondary, #9ca3af);
+}
+.membership-card:hover {
+  transform: translateY(-0.5rem) scale(1.03);
+  box-shadow: var(--shadow-card-hover, 0 8px 16px rgba(0,0,0,0.3));
+}
+.membership-card-title {
+  margin-bottom: 0.5rem;
+}
+.membership-card-subtitle {
+  margin-bottom: 1rem;
+  font-size: 1.05rem;
+  font-weight: 500;
+}
+.membership-list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 1.5rem;
+}
+.membership-list li {
+  margin-bottom: 0.5rem;
+  padding-left: 0.5rem;
+  font-size: 1rem;
+  color: var(--text-secondary, #9ca3af);
+}
+
+.tick-nike {
+  color: var(--accent-green-hover);
+}
+
+.membership-btn {
+  margin-top: auto;
+  width: 100%;
+  font-size: 1.08rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  padding: 0.75rem 0;
+  background: var(--accent-green, #2284C3);
+  color: #fff;
+  border: none;
+  transition: background 0.2s, color 0.2s;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+}
+.membership-btn:hover {
   background: var(--accent-green-hover, #339ada);
   color: #fff;
 }
