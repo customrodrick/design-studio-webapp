@@ -33,7 +33,7 @@ pnpm-debug.log*
 .env.*
 .env.local
 
-# Build output
+# Build output files
 dist/
 dist-ssr/
 out/
