@@ -25,15 +25,15 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 
-# Vite cache
+# Vite cache file
 .vite
 
-# Environment files
+# Environment filess
 .env
 .env.*
 .env.local
 
-# Build output
+# Build output files
 dist/
 dist-ssr/
 out/
