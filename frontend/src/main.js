@@ -23,11 +23,11 @@ const navbar = `
       </div>
       <div class="nav-links">
         <a href="#benefits" class="nav-link">Benefits</a>
-        <a href="#services" class="nav-link">Services</a>
+        <!-- <a href="#services" class="nav-link">Services</a> -->
         <a href="#membership" class="nav-link">Membership</a>
         <a href="#about" class="nav-link">About</a>
         <a href="#components" class="nav-link">Components</a>
-        <a href="#team" class="nav-link">Team</a>
+        <!-- <a href="#team" class="nav-link">Team</a> -->
       </div>
       <div class="auth-buttons">
         <a href="Authentication/investor/login.html" class="auth-button login">Register</a>
@@ -43,11 +43,11 @@ const navbar = `
           </button>
           <nav class="sidebar-nav">
             <a href="#benefits" class="nav-link">Benefits</a>
-            <a href="#services" class="nav-link">Services</a>
+            <!-- <a href="#services" class="nav-link">Services</a> -->
             <a href="#membership" class="nav-link">Membership</a>
             <a href="#about" class="nav-link">About</a>
             <a href="#components" class="nav-link">Components</a>
-            <a href="#team" class="nav-link">Team</a>
+            <!-- <a href="#team" class="nav-link">Team</a> -->
           </nav>
         </div>
       </div>
