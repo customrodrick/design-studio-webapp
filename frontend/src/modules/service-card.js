@@ -4,7 +4,7 @@ let serviceHTML = '';
 serviceItem.forEach((serviceItem) => {
     serviceHTML += `
     <div class="services-card">
-        <img src="/src/images/${serviceItem.serviceMedia}" alt="CAD/CAM" class="card-image" />
+        <img src="/images/${serviceItem.serviceMedia}" alt="CAD/CAM" class="card-image" />
         <p class="card-text">${serviceItem.serviceDesc}</p>
     </div>
     `;

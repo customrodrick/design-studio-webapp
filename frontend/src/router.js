@@ -19,7 +19,7 @@ const navbar = `
     <div class="container navbar-container">
       <div class="navbar-left">
         <a href="#home" class="navbar-logo-link">
-          <img src="/src/images/omni.png" alt="mubas Logo" class="navbar-logo-img" />
+          <img src="/images/omni.png" alt="mubas Logo" class="navbar-logo-img" />
           <span class="navbar-title">Design<span class="highlight">Studio</span></span>
         </a>
       </div>

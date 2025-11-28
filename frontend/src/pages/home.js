@@ -3,7 +3,7 @@ export default `
   <section id="home" class="hero-section text-center">
     <div class="container">
       <div class="fidelity-card card hero-card">
-        <img src="/src/images/omni.png" alt="Mubas Logo" class="fidelity-card-logo hero-logo" />
+        <img src="/images/omni.png" alt="Mubas Logo" class="fidelity-card-logo hero-logo" />
         <h1 class="fidelity-card-title hero-title">
           MUBAS <span class="highlight">Design</span> Studio
         </h1>

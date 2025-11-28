@@ -2,7 +2,7 @@ export default `
   <section id="portfolio" class="section-portfolio">
     <div class="container portfolio-flex">
       <div class="portfolio-image">
-        <img src="/src/images/background.jpg" alt="Innovation Hub Team" class="card-img" />
+        <img src="/images/background.jpg" alt="Innovation Hub Team" class="card-img" />
       </div>
       <div class="portfolio-content">
         <h2 class="benefits-title" style="margin-bottom:1rem;">

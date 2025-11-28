@@ -8,9 +8,9 @@ export default `
         Mynve is licensed and recommended by the Reserve Bank of Malawi. We’re proudly affiliated with leading banks, mobile money services, and financial institutions across Malawi.
       </p>
       <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:2rem;">
-        <img src="/src/images/logo1.png" alt="Partner Logo" style="height:48px;">
-        <img src="/src/images/logo2.png" alt="Partner Logo" style="height:48px;">
-        <img src="/src/images/logo4.png" alt="Partner Logo" style="height:48px;">
+        <img src="/images/logo1.png" alt="Partner Logo" style="height:48px;">
+        <img src="/images/logo2.png" alt="Partner Logo" style="height:48px;">
+        <img src="/images/logo4.png" alt="Partner Logo" style="height:48px;">
       </div>
     </div>
   </section>
