@@ -12,29 +12,25 @@ export default `
           <i class="fas fa-phone benefit-icon"></i>
           <h3 class="benefit-card-title">Call</h3>
           <p class="benefit-card-desc">
-            Malawi: +265-887235642<br>
-            International: +265-996486143<br>
-            24/5 Customer Service (8:00 AM Monday to 8:00 AM Saturday, CAT)
+          +265-883 65 91 202<br>
           </p>
         </div>
         <div class="contact-card card">
           <i class="fas fa-envelope benefit-icon"></i>
           <h3 class="benefit-card-title">Email</h3>
           <p class="benefit-card-desc">
-            Reach out to us at <a href="mailto:joengalonde@gmail.com" class="highlight">joengalonde@gmail.com</a>.
+            Reach out to us at <a href="mailto:designstudio@mubas.ac.mw" class="highlight">designstudio@mubas.ac.mw</a>.
           </p>
         </div>
         <div class="contact-card card">
           <i class="fas fa-map-marker-alt benefit-icon"></i>
           <h3 class="benefit-card-title">Visit</h3>
           <p class="benefit-card-desc">
-            DesignStudio<br>
-            K/S 225<br>
-            Blantyre, Malawi
+            MUBAS Main Campus, <br>Blantyre
           </p>
         </div>
       </div>
-      <a href="mailto:joengalonde@gmail.com" class="cta-button" style="margin-top:2rem;">Contact Support <i class="fas fa-arrow-right"></i></a>
+      <a href="mailto:designstudio@mubas.ac.mw" class="cta-button" style="margin-top:2rem;">Contact Support <i class="fas fa-arrow-right"></i></a>
     </div>
   </section>
 `;
