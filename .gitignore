@@ -37,6 +37,9 @@ dist-ssr/
 out/
 build/
 
+# other files (srs, docs and other stuff)
+SRS_MUBAS_Design_Studio_SRS.docx
+
 # IDEs and editors
 .idea/
 .vscode
